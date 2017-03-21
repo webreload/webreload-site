@@ -1,0 +1,22 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+<ul class="group">
+  {% for post in site.posts %}
+  <li class="post">
+    <header>
+      <a href="{{ post.url }}">
+        <h2>{{ post.title }}</h2>
+      </a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+    </header>
+
+    {{ post.excerpt }}
+
+    <a href="{{ post.url }}">Read more...</a>
+  </li>
+  {% endfor %}
+</ul>

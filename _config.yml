@@ -1,0 +1,20 @@
+title: Web Reload
+permalink: "/blog/:year/:month/:day/:title"
+excerpt_separator: "<!---->"
+include:
+  - _pages
+
+exclude:
+  - CNAME
+  - README.md
+  - LICENSE.md
+
+google_analyics_id: UA-94073044-1
+google_site_verification: 14S9DJlIj4hGn6_QL9TiM5Ip2N0_nQIY2VB6TKtIAao
+
+gems:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
